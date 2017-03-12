@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="charset=utf-8" />
+		<title>linkchina</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div class="right-navigation">
+			<ul>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="block_box">
+			<div class="block" id="block_0">
+				<p class="block-text">
+					<span>balalala</span>
+				</p>
+				<div class="helix">
+					<div id="container" class="dblHelix"></div>
+				</div>
+			</div>
+			<div class="block" id="block_1">
+				<p class="block-text">
+					<span>balalala</span>
+				</p>
+			</div>
+		</div>
+		<input type="hidden" value="0" class="inputmark"/>
+		<input type="hidden" value="0" class="inputmark2"/>
+		<script type="text/javascript">
+			(function(window, document) {
+				// var count = Math.ceil(window.innerWidth / 12 * 2);
+				var count = 50,i = 0,div,delay;
+				var container = document.getElementById('container');
+				var divList = document.createDocumentFragment();
+				var animDelay = ('animationDelay' in document.documentElement.style) ? 'animationDelay' : 'webkitAnimationDelay';
+				for (i; i < count; ++i) {
+					div = document.createElement('div');
+					delay = (i - count) * 0.1;
+					div.style[animDelay] = delay + 's,' + delay / 2 + 's';
+					divList.appendChild(div);
+				}
+				container.appendChild(divList);
+			})(window, document);
+		</script>
+		<script src="js/jquery.min.js" ></script>
+		<script src="js/jquery.mousewheel.js" ></script>
+		<script src="js/linkchina-index.js" ></script>
+	</body>
+</html>
