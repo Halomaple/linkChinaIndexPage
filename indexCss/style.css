@@ -169,7 +169,7 @@ input::-ms-clear {
 .link-button {
 	width: 340px;
 	height: 200px;
-	background: url(../images/link-button.png) no-repeat center center;
+	background: url(../indexImages/link-button.png) no-repeat center center;
 	background-size: contain;
 	display: flex;
 	justify-content: center;
