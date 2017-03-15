@@ -69,7 +69,7 @@ var animDelay = ('animationDelay' in document.documentElement.style) ? 'animatio
 	for (i; i < count; i++) {
 		div = document.createElement('div');
 		delay = (i - count) * 0.6;
-		var radius = parseInt(Math.random() * (15) + 15, 10) + 'px';
+		var radius = parseInt(Math.random() * (8) + 8, 10) + 'px';
 
 		div.style.width = radius;
 		div.style.height = radius;
