@@ -84,7 +84,16 @@ var animDelay = ('animationDelay' in document.documentElement.style) ? 'animatio
 })(window, document);
 
 $(document).ready(function() {
+	//styling
 	$('body').show();
+
+	// $('.title-tips').css({
+	// 	'left': 'calc(50% -' + ($(".activity-img").width() / 2) + ');'
+	// });
+
+	// $('.title-tips').css();
+
+
 	$('.inputmark').val(0);
 	$('.inputmark2').val(0);
 	$('.right-navigation li').eq(0).addClass('on');
