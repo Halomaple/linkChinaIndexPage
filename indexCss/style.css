@@ -10,6 +10,7 @@ body {
 	font-size: 12px;
 	word-wrap: break-word;
 	overflow: hidden;
+	display: none;
 }
 button, input, select, textarea {
 	font: 12px/1.5  Arial, Helvetica, Verdana, sans-serif;
@@ -139,6 +140,7 @@ input::-ms-clear {
 	color: #fff;
 }
 #block_1 {
+	height: 100%;
 	background: #fff;
 	background-size: 100% 100%;
 	display: flex;
@@ -157,12 +159,40 @@ input::-ms-clear {
 .block-text {
 	text-align: center;
 }
-.link-button-group {
+.link-button-group-container {
 	position: absolute;
-	top: calc(50% - 100px);
+	top: calc(50% - 170px);
 	left: 0;
 	right: 0;
 	z-index: 10;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.link-button-group-container .logo-container > h1{
+	padding-left: 20px;
+	font-size: 3.5em;
+	font-weight: 300;
+}
+.logo-container .logo{
+	margin: 10px 0;
+	display: flex;
+	justify-content: flex-start;
+}
+.logo-container .logo img{
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	margin: 5px;
+}
+.logo-container .logo h3{
+	font-size: 2.5em;
+	font-weight: 300;
+	text-align: left;
+	display: inline-block;
+}
+.link-button-group{
 	display: flex;
 	justify-content: center;
 }
@@ -210,8 +240,22 @@ input::-ms-clear {
 	justify-content: center;
 	flex-basis: 60%;
 }
+
+#block_1 .block-bottom .clearfix{
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
 #block_2 .block-top {
 	flex-basis: 70%;
+}
+
+#block_2 .block-top .clearfix{
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 #block_2 .block-bottom {
 	flex-basis: 30%;

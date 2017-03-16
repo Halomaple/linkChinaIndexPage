@@ -84,6 +84,7 @@ var animDelay = ('animationDelay' in document.documentElement.style) ? 'animatio
 })(window, document);
 
 $(document).ready(function() {
+	$('body').show();
 	$('.inputmark').val(0);
 	$('.inputmark2').val(0);
 	$('.right-navigation li').eq(0).addClass('on');
